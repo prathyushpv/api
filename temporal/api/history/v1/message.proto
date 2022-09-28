@@ -195,7 +195,7 @@ message WorkflowTaskCompletedEventAttributes {
     // Version info of the worker who processed this workflow task, or missing if worker is not
     // using versioning. If present, the `build_id` field within supersedes `binary_checksum`, which
     // may be populated with the same value to preserve compatability.
-    temporal.api.common.v1.WorkerVersionStamp worker_versions = 5;
+    temporal.api.common.v1.WorkerVersionStamp worker_version = 5;
 }
 
 message WorkflowTaskTimedOutEventAttributes {
